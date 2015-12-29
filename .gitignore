@@ -25,4 +25,4 @@ Temporary Items
 
 ### Sass ###
 .sass-cache
-.sass
+assets/css/*.sass
