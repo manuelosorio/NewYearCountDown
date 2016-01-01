@@ -10,10 +10,10 @@
 <body>
 
 	
-	<div class="beforeten">
+	<div class="clock">
 		<div class="container">
 			<div class="row">
-				<div class="twelve columns"><h1>Count Down to the New Year</h1><h1 class="finished hide"></h1></div>
+				<div class="twelve columns"><h1>Count Down to the New Year</h1></div>
 			</div>
 		</div>
 
@@ -28,17 +28,18 @@
 			</div>
 	</div>
 	
-		<div class="hide final-clock">
-		
-			<div class="row">
-				<div class="two columns"><span id="seconds"><p>00</p></span><div class="category">Seconds</div></div>
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns finished hide">
+				<h1><span>H</span><span>a</span><span>p</span><span>p</span><span>y</span> <span>N</span><span>e</span><span>w</span> <span>Y</span><span>e</span><span>a</span><span>r</span><span>!</span></h1>
 			</div>
-		</div>
+			</div>
+	</div>
 
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="twelve columns">© 2014-2015, <a href="https://manuelosroio.me">MANUEL OSORIO</a> ALL RIGHTS RESERVED.</div>
+				<div class="twelve columns">© 2014-2016, <a href="https://manuelosroio.me">MANUEL OSORIO</a> ALL RIGHTS RESERVED.</div>
 			</div>
 		</div>
 	</footer>
@@ -46,15 +47,22 @@
 
 	<script src="assets/js/jquery-2.1.4.min.js"></script>
 	<script src="assets/js/functions.js"></script>
-
+	
 
 	<script>
 		countdown('1/1/2016  12:00:00 AM', ['months', 'days', 'hours', 'minutes', 'seconds'], function() {
 			console.log('Finished!');
 		});
 	</script>
+
+<!--
+	<script>
+		countdown('12/31/2015  10:52:00 PM', ['months', 'days', 'hours', 'minutes', 'seconds'], function() {
+			console.log('Finished!');
+		});
+	</script>
 	
-	
+-->
 	
 </body>
 </html>
