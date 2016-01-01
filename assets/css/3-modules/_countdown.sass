@@ -40,22 +40,20 @@
 			left: auto
 			right: auto
 	.finished
-		font-size: 165px
-		color: $red
 		text-align: center
-		padding-top: 50%
-		+transition(800ms ease)
+		padding-top: 25%
 		h1 span
+			font-size: 65px
 			&:nth-child(even)
 				animation-name: animation1
 				color: $purple
-				animation-duration: 2s
-				animation-iteration-count: 100
+				animation-duration: 800ms
+				animation-iteration-count: 10000000000
 			&:nth-child(odd)
 				color: $white
 				animation-name: animation2
-				animation-duration: 2s
-				animation-iteration-count: 100
+				animation-duration: 800ms
+				animation-iteration-count: 10000000000
 @media (min-width: 550px)
 	h1
 		font-size: 75px
@@ -73,11 +71,13 @@
 			transform: translate(-50%, -50%)
 			display: block
 	.finished
-		font-size: 165px
 		color: $red
 
 		text-align: center
 		padding-top: 0
+		h1
+			span
+				font-size: 165px
 		
 
 .hide, #hide
