@@ -23,7 +23,16 @@ var countdown = function (end, elements, callback) {
 			if(remaining <= 0) {
 
 				clearInterval(timer);
-				
+				$('.clock').addClass('hide');
+				$('.finished').removeClass('hide');
+				var styles = {
+					position: 'absolute',
+					right: 0,
+					bottom: 0,
+					left: 0
+
+				};
+				$('.footer').css(styles);
 				if(typeof callback === 'function'){
 					callback();
 				}
@@ -41,7 +50,8 @@ var countdown = function (end, elements, callback) {
 				'days' : Math.floor((remaining % _month) / _day),
 				'hours' : Math.floor((remaining % _day) / _hour),
 				'minutes' : Math.floor((remaining % _hour) / _minute),
-				'seconds' : Math.floor((remaining % _minute) / _second)
+				'seconds' : Math.floor((remaining % _minute) / _second),
+				'secondz' : Math.floor((remaining % _minute) / _second)
 			}
 //			console.log(data)
 			if(elements.length) {

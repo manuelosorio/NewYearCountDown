@@ -1,4 +1,13 @@
-@media (max-width: 399px)
+@keyframes animation1
+    from {color: $purple}
+    to {color: $white}
+@keyframes animation2
+    from {color: $white}
+    to {color: $purple}
+
+
+
+@media (min-width: 300px)
 	h1
 		font-size: 45px
 	columns
@@ -30,42 +39,26 @@
 			top: 0
 			left: auto
 			right: auto
-		
-
-@media (min-width: 400px)
-	h1
-		font-size: 45px
-	columns
-		margin-bottom: 15px
-	.countdown
-		width: 56.5%
-		height: 60px
-		background: #eee
-		border-radius: 5px
-		border-width: 7px
-		border-bottom-color: #2c6671
-		border-bottom-style: solid
-		position: relative
-		margin: 0 auto
-		span p
-			font-size: 30px
-			position: absolute
-			color: $gray
-			top: 50%
-			left: 50%
-			transform: translate(-50%, -50%)
-			display: block
-	.category
-		font-size: 20px
-		color: $white
+	.finished
+		font-size: 165px
+		color: $red
 		text-align: center
-		margin:
-			bottom: 10px
-			top: 0
-			left: auto
-			right: auto
-
+		padding-top: 50%
+		+transition(800ms ease)
+		h1 span
+			&:nth-child(even)
+				animation-name: animation1
+				color: $purple
+				animation-duration: 2s
+				animation-iteration-count: 100
+			&:nth-child(odd)
+				color: $white
+				animation-name: animation2
+				animation-duration: 2s
+				animation-iteration-count: 100
 @media (min-width: 550px)
+	h1
+		font-size: 75px
 	columns
 		margin-bottom: 15px
 	.countdown
@@ -79,3 +72,15 @@
 			left: 50%
 			transform: translate(-50%, -50%)
 			display: block
+	.finished
+		font-size: 165px
+		color: $red
+
+		text-align: center
+		padding-top: 0
+		
+
+.hide, #hide
+	display: none
+.show
+	display: block !important

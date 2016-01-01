@@ -28,3 +28,4 @@ Temporary Items
 
 *.sass
 assets/css/main.sass
+*.cfg
