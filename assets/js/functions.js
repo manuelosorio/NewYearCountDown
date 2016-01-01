@@ -20,7 +20,14 @@ var countdown = function (end, elements, callback) {
 				return;
 			}
 			
-			if(remaining <= 0) {
+			if(remaining <= 10 ) {
+				console.log('Does this work?');
+				$('.beforeten').addClass('hide');
+				$('.final-clock').removeClass('hide');
+				$('.finished').removeClass('hide');
+				$('.finished').addClass('show');
+
+			} else if(remaining <= 0) {
 
 				clearInterval(timer);
 				
