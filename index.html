@@ -9,49 +9,67 @@
 
 </head>
 <body>
+		<input type="checkbox" name="menu" id="check-box" >
+	<div class="page-wrap">
+		<label class="menu" for="check-box">
+			<span class="bars"></span>
+			<span class="bars"></span>
+			<span class="bars"></span>
+		</label>
+		
 
-	
-	<div class="clock">
-		<div class="container">
-			<div class="row">
-				<div class="twelve columns"><h1>Count Down to the New Year</h1></div>
+		<span id="contian">
+			<div class="clock">
+				<div class="container">
+					<div class="row">
+						<div class="twelve columns"><h1>Count Down to the New Year</h1></div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row">
+							<div class="two columns"><div class="countdown"><span id="months"><p>00</p></span></div><div class="category">Months</div></div>
+							<div class="two columns"><div class="countdown"><span id="days"><p>00</p></span></div><div class="category">Days</div></div>
+							<div class="two columns"><div class="countdown"><span id="hours"><p>00</p></span></div><div class="category">Hours</div></div>
+							<div class="two columns"><div class="countdown"><span id="minutes"><p>00</p></span></div><div class="category">Minutes</div></div>
+							<div class="two columns"><div class="countdown"><span id="seconds"><p>00</p></span></div><div class="category">Seconds</div></div>
+						</div>
+					</div>
 			</div>
-		</div>
 
-		<div class="container">
-			<div class="row">
-					<div class="two columns"><div class="countdown"><span id="months"><p>00</p></span></div><div class="category">Months</div></div>
-					<div class="two columns"><div class="countdown"><span id="days"><p>00</p></span></div><div class="category">Days</div></div>
-					<div class="two columns"><div class="countdown"><span id="hours"><p>00</p></span></div><div class="category">Hours</div></div>
-					<div class="two columns"><div class="countdown"><span id="minutes"><p>00</p></span></div><div class="category">Minutes</div></div>
-					<div class="two columns"><div class="countdown"><span id="seconds"><p>00</p></span></div><div class="category">Seconds</div></div>
+			<div class="container">
+				<div class="row">
+					<div class="twelve columns finished hide">
+						<h1><span>H</span><span>a</span><span>p</span><span>p</span><span>y</span> <span>N</span><span>e</span><span>w</span> <span>Y</span><span>e</span><span>a</span><span>r</span><span>!</span></h1>
+					</div>
 				</div>
 			</div>
-	</div>
-	
-	<div class="container">
-		<div class="row">
-			<div class="twelve columns finished hide">
-				<h1><span>H</span><span>a</span><span>p</span><span>p</span><span>y</span> <span>N</span><span>e</span><span>w</span> <span>Y</span><span>e</span><span>a</span><span>r</span><span>!</span></h1>
-			</div>
-			</div>
-	</div>
 
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="twelve columns">© 2014-2016, <a href="https://manuelosroio.me">MANUEL OSORIO</a> ALL RIGHTS RESERVED.</div>
-			</div>
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="twelve columns">© 2014-2016, <a href="https://manuelosroio.me">MANUEL OSORIO</a> ALL RIGHTS RESERVED.</div>
+					</div>
+				</div>
+			</footer>
+
+		</span>
+
+		<div class="side-bar">
+			<ul><a href="#">About</a></ul>
+			<ul><a href="#">Work</a></ul>
+			<ul><a href="#">Contact</a></ul>
+			<ul><a href="#">Blog</a></ul>
+			<ul><a href="#">Shop</a></ul>
 		</div>
-	</footer>
-	
-
+	</div>
+	 
 	<script src="assets/js/jquery-2.1.4.min.js"></script>
 	<script src="assets/js/functions.js"></script>
 	
 
 	<script>
-		countdown('1/1/2016  12:00:00 AM', ['months', 'days', 'hours', 'minutes', 'seconds'], function() {
+		countdown('1/1/2017  12:00:00 AM', ['months', 'days', 'hours', 'minutes', 'seconds'], function() {
 			console.log('Finished!');
 		});
 	</script>
