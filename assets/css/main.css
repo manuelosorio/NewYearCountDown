@@ -379,14 +379,22 @@ hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px
 
 body { background: url(../img/balldrop.svg) #00adb5 no-repeat center center fixed; background-size: cover; }
 
-nav .menu { position: fixed; z-index: 2; top: 15px; right: 200px; cursor: pointer; }
+.menu { position: fixed; z-index: 2; top: 15px; right: 15px; cursor: pointer; transition: all 0.15s ease-out 0s; }
 
-nav .menu .bars { height: 5px; width: 25px; border-radius: 2px; margin-bottom: 5px; background: #eee; display: block; }
+.menu .bars { height: 5px; width: 25px; border-radius: 2px; margin-bottom: 5px; background: #eee; display: block; }
 
-.side-bar { position: fixed; top: 0px; right: 0px; bottom: 0px; z-index: 0; background: #222831; width: 120px; padding: 30px; }
+.side-bar { position: fixed; top: 0px; right: -180px; bottom: 0px; z-index: 0; background: #222831; width: 120px; padding: 30px; transition: all 0.15s ease-out 0s; }
 
 .side-bar ul a { color: #eee; transition: 500ms ease; }
 
 .side-bar ul a:hover { color: #00adb5; }
 
+.clock, .footer { transition: all 0.15s ease-out 0s; }
+
 #check-box { display: none; }
+
+#check-box:checked + .page-wrap .menu { right: 200px; }
+
+#check-box:checked + .page-wrap .side-bar { right: 0px; }
+
+#check-box:checked + .page-wrap #contian .clock, #check-box:checked + .page-wrap #contian .footer { padding-right: 180px; }
